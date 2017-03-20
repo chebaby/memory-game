@@ -1,0 +1,58 @@
+@charset 'UTF-8';
+@import 'normalize';
+
+.container {
+	position: relative;
+	height: 550px;
+	width: 740px;
+	background-color: #f8f8f8;
+	border: 1px solid #d2d2d2;
+	margin: 1% auto;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#board {
+	height: 100%;
+	width: 100%;
+}
+
+.card {
+	background-color: #868686;
+	border: 1px solid #ccc;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	float: left;
+	padding: 20px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 64px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
+.card.fliped {
+	transform: rotateY(360deg);
+	transition: transform 0.3s ease-in-out 0s;
+}
+
+.alert {
+	position: absolute;
+    height: 150px;
+    width: 50%;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, .5);
+}
+.success {
+	color: #388E3C;
+}
+.hidden {
+	display: none !important;
+}
